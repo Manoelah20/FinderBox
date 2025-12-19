@@ -1,14 +1,7 @@
 {
   "compilerOptions": {
-<<<<<<< HEAD
     "target": "es6",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
-    "baseUrl": "src", // Se você quiser usar caminhos absolutos baseados em 'src'
-    
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -21,18 +14,17 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    
+    // Ajuste aqui para o Monorepo
+    "baseUrl": ".", 
+    "paths": {
+      "@web/*": ["apps/web/src/*"],
+      "@mobile/*": ["apps/(tabs)/*"] // se for usar caminhos absolutos no mobile
+    }
   },
   "include": [
-    "src"
+    "apps/web/src",
+    "packages"
   ]
 }
-=======
-    "baseUrl": "apps/src",
-    "paths": {
-      "@/*": ["./*"]
-    }
-  }
-}
-
->>>>>>> 5a9e3bd (feat: configuração de segurança, firebase e monorepo)

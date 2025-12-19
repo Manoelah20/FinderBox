@@ -52,3 +52,7 @@ dist/
 .env
 .env.local
 .env.production
+
+*.json
+service-account.json
+

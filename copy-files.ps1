@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Script para copiar arquivos para apps/finderbox
 Write-Host "📦 Copiando arquivos para apps/finderbox..." -ForegroundColor Cyan
 
@@ -37,11 +37,6 @@ if (Test-Path "src\assets\finderbox.png") {
 
 Write-Host "`n✅ Concluído! Agora execute: cd apps/finderbox && npm install && npm run dev:web" -ForegroundColor Green
 
-
-
-
-
-=======
 # Script para copiar arquivos para apps/finderbox
 Write-Host "📦 Copiando arquivos para apps/finderbox..." -ForegroundColor Cyan
 
@@ -80,10 +75,3 @@ if (Test-Path "src\assets\finderbox.png") {
 
 Write-Host "`n✅ Concluído! Agora execute: cd apps/finderbox && npm install && npm run dev:web" -ForegroundColor Green
 
-
-
-
-
-
-
->>>>>>> 5a9e3bd (feat: configuração de segurança, firebase e monorepo)

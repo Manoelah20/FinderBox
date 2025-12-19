@@ -21,5 +21,6 @@
         "Suporte",
         "Tente",
         "vindo"
-    ]
+    ],
+    "git.ignoreLimitWarning": true
 }
