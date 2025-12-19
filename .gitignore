@@ -1,35 +1,29 @@
-# Dependências e Builds
+# Dependências
 node_modules/
+
+# Expo / Mobile
 .expo/
 dist/
 web-build/
-.next/
-out/
 
-# Mobile Native
-/ios
-/android
+# Segurança (Isso vai tirar o "U" do seu .env.backup)
+.env
+.env.backup
+**/.env.backup
+**/.env*.local
+service-account.json
 *.jks
 *.p8
 *.p12
 *.key
-*.mobileprovision
 
-# Segurança e Variáveis de Ambiente (CRÍTICO)
-.env
-.env.backup
-.env*.local
-.env.production
-*.pem
-
-# IDEs e Sistema
+# IDE e Sistema
 .vscode/
-.idea/
 .DS_Store
 *.tsbuildinfo
+FinderBox-main.zip
 
-# Logs
-npm-debug.*
-yarn-debug.*
-yarn-error.*
+# Firebase
+.firebase/
 firebase-debug.log*
+.firebaserc
