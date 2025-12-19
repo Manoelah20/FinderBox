@@ -2,29 +2,32 @@ import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 import { getStorage } from "firebase/storage";
+import { getAnalytics } from "firebase/analytics";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAvPQshcWjQD9sHkQT-_0G-H6gKXRmxB80",
-  authDomain: "finderbox-60d01.firebaseapp.com",
-  projectId: "finderbox-60d01",
-  storageBucket: "finderbox-60d01.firebasestorage.app",
-  messagingSenderId: "688047009944",
-  appId: "1:688047009944:web:1fd2974c8fadb7feffa0ed",
-  measurementId: "G-LZQSCL3F56"
+  // Agora o código lê as chaves do seu arquivo .env que está protegido
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID
 };
 
 // Inicializa o app
 const app = initializeApp(firebaseConfig);
 
-console.log('Firebase inicializado com sucesso');
-console.log('Projeto:', firebaseConfig.projectId);
+// Inicializa Analytics apenas no navegador
+export const analytics = typeof window !== "undefined" ? getAnalytics(app) : null;
 
-// Exporte corretamente TODOS os serviços
+console.log('Firebase inicializado com segurança');
+
+// Exporta os serviços
 export const auth = getAuth(app);
 export const db = getFirestore(app);
 export const storage = getStorage(app);
 
 export default app;
-
 
 
