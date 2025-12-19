@@ -1,78 +1,35 @@
-<<<<<<< HEAD
-# Expo
-.expo/
-.expo-shared/
-dist/
-web-build/
-
-# Node
+# Dependências e Builds
 node_modules/
-npm-debug.log*
-
-# OS
-.DS_Store
-
-# IDE
-.vscode/
-.idea/
-
-# Env
-.env*.local
-
-=======
-# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
-
-# dependencies
-node_modules/
-
-# Expo
 .expo/
 dist/
 web-build/
-expo-env.d.ts
+.next/
+out/
 
-# Native
-.kotlin/
-*.orig.*
+# Mobile Native
+/ios
+/android
 *.jks
 *.p8
 *.p12
 *.key
 *.mobileprovision
 
-# Metro
-.metro-health-check*
+# Segurança e Variáveis de Ambiente (CRÍTICO)
+.env
+.env.backup
+.env*.local
+.env.production
+*.pem
 
-# debug
+# IDEs e Sistema
+.vscode/
+.idea/
+.DS_Store
+*.tsbuildinfo
+
+# Logs
 npm-debug.*
 yarn-debug.*
 yarn-error.*
-
-# macOS
-.DS_Store
-*.pem
-
-# local env files
-.env*.local
-
-# typescript
-*.tsbuildinfo
-
-app-example
-
-# generated native folders
-/ios
-/android
-
-# Firebase
-.firebase/
 firebase-debug.log*
-.firebaserc
-
-# Vite / React Web
-dist/
-.env
-.env.local
-.env.production
-
->>>>>>> 5a9e3bd (feat: configuração de segurança, firebase e monorepo)
