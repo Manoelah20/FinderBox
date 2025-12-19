@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+<<<<<<< HEAD
     "target": "es6",
     "lib": [
       "dom",
@@ -26,3 +27,12 @@
     "src"
   ]
 }
+=======
+    "baseUrl": "apps/src",
+    "paths": {
+      "@/*": ["./*"]
+    }
+  }
+}
+
+>>>>>>> 5a9e3bd (feat: configuração de segurança, firebase e monorepo)

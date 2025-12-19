@@ -1,25 +1,3 @@
-<<<<<<< HEAD
-# Expo
-.expo/
-.expo-shared/
-dist/
-web-build/
-
-# Node
-node_modules/
-npm-debug.log*
-
-# OS
-.DS_Store
-
-# IDE
-.vscode/
-.idea/
-
-# Env
-.env*.local
-
-=======
 # Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
 
 # dependencies
@@ -74,5 +52,3 @@ dist/
 .env
 .env.local
 .env.production
-
->>>>>>> 5a9e3bd (feat: configuração de segurança, firebase e monorepo)

@@ -1,0 +1,251 @@
+/* ============================
+   VARIÁVEIS DE COR E TIPOGRAFIA
+============================ */
+:root {
+  --color-primary: #343a40;
+  --color-secondary: rgb(36, 160, 218);
+  --color-third: #dd5415;
+  --color-accent: #0d6efd;
+  --color-text: #212529;
+}
+
+/* ============================
+   BASE
+============================ */
+body {
+  background-color:#abafb4;
+  min-height: 100vh;
+  font-family: 'Manrope', 'Segoe UI', sans-serif;
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* ============================
+   BOTÕES
+============================ */
+.btn-primary {
+  background-color: var(--color-third) !important;
+  border: none !important;
+  color: #000 !important;
+  padding: 10px 20px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+.btn-primary:hover {
+  background-color: #b84312 !important;
+  transform: scale(1.02);
+}
+
+.btn-secondary {
+  background-color: var(--color-third) !important;
+  border: none !important;
+  color: #000 !important;
+  padding: 10px 20px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+.btn-secondary:hover {
+  background-color: #b84312 !important;
+  transform: scale(1.02);
+}
+
+.btn-entrar {
+  background-color: var(--color-third) !important;
+  border: none !important;
+  color: #000 !important;
+  padding: 10px 20px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+.btn-entrar:hover {
+  background-color: #b84312 !important;
+  transform: scale(1.02);
+}
+
+.btn-google {
+  background-color: #dc3545;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+.btn-google:hover {
+  background-color: #ac8387;
+  transform: scale(1.02);
+}
+
+.user-name {
+  border: 2px solid var(--color-third) !important;
+  border-radius: 8px;
+  padding: 4px 12px;
+  background-color: rgba(221, 84, 21, 0.1);
+  color: var(--color-third);
+  font-weight: 600;
+}
+
+.dropdown-toggle.ms-3 {
+  border: 2px solid var(--color-third) !important;
+  border-radius: 8px !important;
+  background-color: rgba(221, 84, 21, 0.1) !important;
+  color: var(--color-third) !important;
+  padding: 4px 12px !important;
+}
+
+.dropdown-toggle.ms-3:hover {
+  background-color: rgba(221, 84, 21, 0.2) !important;
+}
+
+.dropdown-item {
+  background-color: var(--color-third) !important;
+  color: #000 !important;
+}
+
+.dropdown-item:hover {
+  background-color: #b84312 !important;
+  color: #000 !important;
+}
+
+.dropdown-item.sair {
+  background-color: #ffff00 !important;
+  color: #000 !important;
+}
+
+.dropdown-item.sair:hover {
+  background-color: #ffff66 !important;
+  color: #000 !important;
+}
+
+.forgot-password-link {
+  color: #dc3545 !important;
+  text-decoration: none !important;
+}
+
+.forgot-password-link:hover {
+  color: #a02630 !important;
+  text-decoration: underline !important;
+}
+
+.no-results-text {
+  color: var(--color-third) !important;
+  font-weight: 600;
+}
+
+/* ============================
+   HERO SECTION
+============================ */
+.hero-link {
+  color: #fff !important;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.hero-section {
+  position: relative;
+  overflow: hidden;
+  padding: 6rem 0;
+}
+.hero-section .hero-title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.hero-section .hero-subtitle {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  color: var(--color-primary);
+}
+
+/* ============================
+   CARDS
+============================ */
+.card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+.card-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+.card-text {
+  color: var(--color-primary);
+}
+
+/* ============================
+   DASHBOARD
+============================ */
+.dashboard-container {
+  padding: 20px;
+  background-color: #f4f7f9;
+}
+.dashboard-metrics {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+.metric-card {
+  flex: 1;
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.metric-card h2 { font-size: 1em; color: #666; }
+.metric-value { font-size: 2.5em; font-weight: bold; }
+.metric-card.users .metric-value { color: #007bff; }
+.metric-card.orders .metric-value { color: #28a745; }
+.metric-card.revenue .metric-value { color: #ffc107; }
+
+/* ============================
+   FOOTER & NAVBAR
+============================ */
+.app-bar {
+  background-color: #222;
+  color: var(--color-third);
+  padding: 1rem;
+}
+.app-bar a {
+ color: #fff;
+}
+.app-bar a:hover {
+  color: #d4d4d4;
+}
+
+/* ============================
+   UTILITÁRIOS
+============================ */
+.transition-300 {
+  transition: all 0.3s ease-in-out;
+}
+.transition-300:hover {
+  transform: translateY(-2px) scale(1.01);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+}
+
+/* Design */ /* para a busca não ocupar a tela inteira*/
+
+.max-width-search {
+    max-width: 400px;
+}
+
+@media (max-width: 991px) {
+    .max-width-search {
+        max-width: 100%;
+        margin-bottom: 1rem;
+    }
+}
