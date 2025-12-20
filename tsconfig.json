@@ -26,5 +26,5 @@
   "include": [
     "apps/web/src",
     "packages"
-  ]
+, "apps/web/index.tsx"  ]
 }

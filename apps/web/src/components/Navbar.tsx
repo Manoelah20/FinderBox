@@ -4,7 +4,6 @@ import { Link, useNavigate } from "react-router-dom";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { auth } from "../firebaseConfig";
 import { signOut } from "firebase/auth";
-import ProfilePage from "@/pages/ProfilePage";
 import { FiUser, FiLayout, FiLogOut } from "react-icons/fi";
 import toast from "react-hot-toast";
 
