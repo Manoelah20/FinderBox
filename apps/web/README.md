@@ -32,4 +32,9 @@ O **FinderBox** é uma plataforma moderna de "Achados e Perdidos" desenvolvida p
    npm install
    npm run dev
    ```   
-   
+   📄 Licença
+Este projeto está sob a licença MIT. Sinta-se livre para contribuir, adaptar e compartilhar.
+
+✨ Autora
+Desenvolvido com 💙 por Manoela  
+LinkedIn • GitHub
