@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ],
+  "buildCommand": "turbo run build --filter=web",
+  "outputDirectory": "apps/web/dist",
+  "rootDirectory": "apps/web"
+}
