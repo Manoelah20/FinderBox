@@ -1,1 +1,26 @@
-﻿{"name": "finderbox-web","version": "1.0.0","type": "module","scripts": {"dev": "vite","build": "vite build","preview": "vite preview"},"dependencies": {"expo": "^51.0.39","expo-router": "^3.0.0","expo-splash-screen": "^0.20.0","react": "18.2.0","react-dom": "18.2.0","react-native-web": "^0.19.0","react-router-dom": "^6.22.0","react-hot-toast": "^2.4.1","firebase": "^12.6.0","react-firebase-hooks": "^5.1.1","bootstrap": "^5.3.8","react-bootstrap": "^2.10.10","react-bootstrap-icons": "^1.11.6"},"devDependencies": {"@vitejs/plugin-react": "^5.1.2","vite": "^7.3.0","@types/react": "^18.2.0","@types/react-dom": "^18.2.0","typescript": "^5.3.3"}}
+{
+  "name": "finderbox-web",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.8",
+    "firebase": "^10.0.0",
+    "react": "18.2.0",
+    "react-bootstrap": "^2.10.10",
+    "react-bootstrap-icons": "^1.11.6",
+    "react-dom": "18.2.0",
+    "react-firebase-hooks": "^5.1.1",
+    "react-hot-toast": "^2.6.0",
+    "react-icons": "^5.5.0",
+    "react-router-dom": "^6.30.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.1.2",
+    "vite": "^7.3.0"
+  }
+}
