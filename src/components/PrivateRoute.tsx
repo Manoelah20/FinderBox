@@ -2,8 +2,8 @@
 
 import React from 'react';
 import { Navigate } from 'react-router-dom';
-// 🚨 Importe o useAuth do caminho correto:
-import { useAuth } from '../context/AuthContext.tsx'; 
+import { useAuth } from '../context/AuthContext';
+import App from "./App";
 
 interface PrivateRouteProps {
     children: React.ReactElement;

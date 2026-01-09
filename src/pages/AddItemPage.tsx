@@ -17,6 +17,9 @@ const AddItemPage: React.FC = () => {
     category: "Geral",
     status: "lost",
     location: "",
+    productType: "",
+    acquisitionMethod: "",
+    deliveryType: ""
   });
 
   const [loading, setLoading] = useState(false);
@@ -78,48 +81,48 @@ const AddItemPage: React.FC = () => {
                 />
               </Form.Group>
 
-              <Form.Group className="mb-3">
-                <Form.Label>Localização</Form.Label>
-                <Form.Control
-                  type="text"
-                  placeholder="Ex: Parque Central..."
-                  required
-                  value={formData.location}
-                  onChange={(e) => setFormData({ ...formData, location: e.target.value })}
-                />
-              </Form.Group>
+            <Form.Group className="mb-3">
+              <Form.Label>Localização</Form.Label>
+              <Form.Control
+                type="text"
+                placeholder="Ex: Parque Central..."
+                required
+                value={formData.location}
+                onChange={(e) => setFormData({ ...formData, location: e.target.value })}
+              />
+            </Form.Group>
 
-              <Form.Group className="mb-3">
-                <Form.Label>Tipo de Produto</Form.Label>
-                <Form.Control
-                  type="text"
-                  placeholder="Ex: Livro, documento, carteira..."
-                  required
-                  value={formData.location}
-                  onChange={(e) => setFormData({ ...formData, location: e.target.value })}
-                />
-              </Form.Group>
+            <Form.Group className="mb-3">
+              <Form.Label>Tipo de Produto</Form.Label>
+              <Form.Control
+                type="text"
+                placeholder="Ex: Livro, documento, carteira..."
+                required
+                value={formData.productType}
+                onChange={(e) => setFormData({ ...formData, productType: e.target.value })}
+              />
+            </Form.Group>
 
-               <Form.Group className="mb-3">
-                <Form.Label>Método de Aquisição</Form.Label>
-                <Form.Control
-                  type="text"
-                  placeholder="Comprado, encontrado, Alugado, etc..."
-                  required
-                  value={formData.location}
-                  onChange={(e) => setFormData({ ...formData, location: e.target.value })}
-                />
-              </Form.Group>
-              
-                 <Form.Group className="mb-3">
-                <Form.Label>Tipo de Entrega/Empresas</Form.Label>
-                <Form.Control
-                  type="text"
-                  placeholder="Ex: Ifood, Rappi, Loggi, Sedex, Jadlog, etc..."
-                  required
-                  value={formData.location}
-                  onChange={(e) => setFormData({ ...formData, location: e.target.value })}
-                />
+            <Form.Group className="mb-3">
+              <Form.Label>Método de Aquisição</Form.Label>
+              <Form.Control
+                type="text"
+                placeholder="Comprado, encontrado, alugado, etc..."
+                required
+                value={formData.acquisitionMethod}
+                onChange={(e) => setFormData({ ...formData, acquisitionMethod: e.target.value })}
+              />
+            </Form.Group>
+
+            <Form.Group className="mb-3">
+              <Form.Label>Tipo de Entrega/Empresas</Form.Label>
+              <Form.Control
+                type="text"
+                placeholder="Ex: Ifood, Rappi, Loggi, Sedex, Jadlog, etc..."
+                required
+                value={formData.deliveryType}
+                onChange={(e) => setFormData({ ...formData, deliveryType: e.target.value })}
+              />
               </Form.Group>
               
               <Form.Group className="mb-4">
